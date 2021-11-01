@@ -41,19 +41,15 @@ const Weather = () => {
       ];
 
       const indexBg = Math.floor(Math.random() * image.length);
-      console.log(image[indexBg]);
+      // console.log(image[indexBg]);
       setChangeBackground(image[indexBg]);
 
       const bgId = document.getElementById("bg");
       bgId.src = changeBackground;
-    }, 8000);
-  }, []);
- 
-  return (
-    <div>
-    
-    </div>
-  );
+    }, 9000);
+  });
+
+  return <div></div>;
 };
 
 export default Weather;
